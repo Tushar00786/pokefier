@@ -7,7 +7,10 @@ I was looking for a Pokétwo autocatcher on Github for quite a while and the one
 ## Pokéfier and Machine Learning
 Pokéfier uses machine learning to identify pokemon images, given a url or an image object. The program and the model is completely free. However, you would need to join our Discord server to avail the `labels` and `identifier` which contain the pokemon names and, if you want to autocatch on mobile, the link to the Pokéfier API.
 
-The creation of this project was just like any other Machine Learning project. To recreate it, you would have to: [^note]
-1. Create a model using a programming language of your choice and associated libraries
-
-[^note]
+The creation of this project was just like any other Machine Learning project. To recreate it, you would have to:
+1. Collect data
+2. Prepare the dataset (referred to as data cleaning)
+3. Create a model 
+4. Train the model
+5. Make predictions using the model
+You can do this using a programming language of your choice.
