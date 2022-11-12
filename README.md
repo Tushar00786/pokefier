@@ -14,4 +14,7 @@ The creation of this project was just like any other Machine Learning project. T
 4. Train the model
 5. Make predictions using the model
 
-You can do this using a programming language of your choice.
+You can do this using a programming language of your choice. In all of this, collecting the data will be the toughest part. I have made a program to collect Pokémon images and label them accordingly, which I plan to open-source if this project gets 500 stars.
+
+## Plans for the future
+This project is still a WIP and I will update it frequently when I get time. Others are encouraged to collaborate and find ways to improve the program.
