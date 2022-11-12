@@ -13,4 +13,5 @@ The creation of this project was just like any other Machine Learning project. T
 3. Create a model 
 4. Train the model
 5. Make predictions using the model
+
 You can do this using a programming language of your choice.
