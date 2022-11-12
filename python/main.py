@@ -5,7 +5,7 @@ import asyncio
 
 # module imports
 from src.utils import *
-from src.helpers import solve
+from src.captcha_solver import solve
 
 # load the model and initialize labels
 model = tf.keras.models.load_model("model_pokemon.h5")
