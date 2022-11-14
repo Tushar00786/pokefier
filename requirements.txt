@@ -1,0 +1,7 @@
+undetected_chromedriver
+SpeechRecognition
+discord.py-self
+opencv-python
+tensorflow
+requests
+pydub
