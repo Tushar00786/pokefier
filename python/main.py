@@ -1,7 +1,7 @@
 # put your token inside quotes
 TOKEN = ""
 
-# replace with server id's you want to autocatch on
+# replace with id/s of server/s you want to autocatch on
 WHITELISTED_SERVERS = [69696969696, 420420420420]
 
 # library imports
