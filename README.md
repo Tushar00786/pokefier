@@ -5,7 +5,7 @@ The best autocatching program on Pokétwo to have been created till date. Why? B
 - Download Python version 3.10.8 if you haven't already. Click [here](https://www.python.org/downloads/release/python-3108/) to do this.
 - Run the Python installer and make sure you add python to PATH. Click on 'Install Now' and wait for the installation to finish.
 - Download this repository or git clone it.
-- Double click or `cd` into `pokefier/autocatcher` then open a terminal. Input the command `pip install -r requirements.txt`
+- Double click or `cd` into `pokefier/autocatcher` then open a terminal. Input the command `pip install -r requirements.txt` and wait till it's complete.
 
 ## Background
 I was looking for a Pokétwo autocatcher on Github for quite a while and the ones I could find were either paid or extremely sketchy. There were some free ones which used the infamous "hint exploit" but that was just very unprofessional to me. Paying to exploit a Discord bot or running obfuscated code that can do god-knows-what was just not acceptable. So, if you are like me and can relate, Pokéfier is made just for you.
