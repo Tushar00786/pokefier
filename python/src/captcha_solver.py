@@ -9,6 +9,7 @@ import undetected_chromedriver as uc
 import time
 
 import requests
+import discord
 
 from pydub import AudioSegment
 import speech_recognition as sr
@@ -150,10 +151,14 @@ def SolveCaptcha(url: str) -> bool:
         return True
 
 
-def solve(url: str) -> None:
+def solve(client: discord.Client, url: str) -> None:
     solved = False
 
     while solved == False:
         solved = SolveCaptcha(url)
 
+    client.verifying = False
+    client.captcha_url = ''
+
+    print("Successfully solved the CAPTCHA!")
     return
