@@ -1,41 +1,17 @@
 import cv2
-import asyncio
+import time
 import discord
 import requests
-import random
 import numpy as np
 import tensorflow as tf
 
-from asyncio.exceptions import TimeoutError
-
-
-async def sendMessage(client: discord.Client, message: discord.Message, content: str, loop) -> None:
-    await message.channel.send(content)
-
-    def check(m):
-        return m.author.id == 716390085896962058 and m.channel == message.channel and m.content.startswith("Congratulations") and str(client.user.id) in m.content
-
-    try:
-        await client.wait_for('message', check=check, timeout=2)
-
-    except TimeoutError:
-        # resend the message if acknowledgement is not received
-        if loop.is_closed() == False:
-            await message.channel.trigger_typing()
-            await asyncio.sleep(2 + random.random())
-
-            await message.channel.send(content)
-
-    return
-
-
-def catch(client: discord.Client, model: tf.keras.Sequential, pokemons: list, image_url: str, message: discord.Message, loop) -> None:
+def catch(model: tf.keras.Sequential, pokemons: list, image_url: str, message: discord.Message, loop) -> None:
     name = identify(model, pokemons, image_url)
     catch_string = f"<@716390085896962058> c {name.lower()}"
 
     if loop.is_closed() == False:
-        loop.create_task(sendMessage(
-            client, message, catch_string, loop))
+        time.sleep(1.5)
+        loop.create_task(message.channel.send(catch_string))
 
     return
 
