@@ -3,7 +3,7 @@ The best autocatching program on Pokétwo to have been created till date. Why? B
 
 ## Setup 
 - Download Python version 3.10.8 if you haven't already. Click [here](https://www.python.org/downloads/release/python-3108/) to do this.
-- Run the Python installer and make sure to add python to PATH. Click on 'Install Now' and wait for the installation to finish.
+- Run the Python installer and make sure you add python to PATH. Click on 'Install Now' and wait for the installation to finish.
 - Download this repository or git clone it.
 - Double click or `cd` into `pokefier/autocatcher` then open a terminal. Input the command `pip install -r requirements.txt`
 
