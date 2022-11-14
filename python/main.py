@@ -43,7 +43,7 @@ class Pokefier(discord.Client):
                     await message.channel.trigger_typing()
 
                     threading.Thread(target=catch, args=(
-                        self, model, pokemons, pokemon_image, message, asyncio.get_event_loop())).start()
+                        model, pokemons, pokemon_image, message, asyncio.get_event_loop())).start()
 
             if message.content.startswith("Whoa there") and str(self.user.id) in message.content:
                 self.verifying = True
