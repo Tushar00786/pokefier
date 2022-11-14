@@ -1,5 +1,5 @@
 # Pokéfier
-The best autocatching program on Pokétwo to have been created till date. Why? Because it is free and doesn't log your token.
+The best autocatching program on Pokétwo to have been created till date. Why? Because it is free, automatically solves CAPTCHAs and doesn't log your token.
 
 ## Setup 
 - Download Python version 3.10.8 if you haven't already. Click [here](https://www.python.org/downloads/release/python-3108/) to do this.
