@@ -10,7 +10,6 @@ def catch(model: tf.keras.Sequential, pokemons: list, image_url: str, message: d
     catch_string = f"<@716390085896962058> c {name.lower()}"
 
     if loop.is_closed() == False:
-        time.sleep(1.5)
         loop.create_task(message.channel.send(catch_string))
 
     return
