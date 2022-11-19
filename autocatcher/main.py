@@ -4,6 +4,9 @@ TOKEN = ""
 # replace with id/s of server/s you want to autocatch on
 WHITELISTED_SERVERS = [69696969696, 420420420420]
 
+# replace with id/s of channel/s you don't want to autocatch on
+BLACKLISTED_CHANNELS = [4206942069]
+
 # library imports
 import discord
 import threading
@@ -37,7 +40,7 @@ class Pokefier(discord.Client):
         # only acknowledge the bot's messages if captcha is not being solved
         if message.author.id == 716390085896962058 and self.verifying == False:
             if len(message.embeds) > 0 and "wild pokémon has appeared!" in message.embeds[0].title:
-                if message.guild.id in WHITELISTED_SERVERS:
+                if message.guild.id in WHITELISTED_SERVERS and message.channel.id not in BLACKLISTED_CHANNELS:
                     pokemon_image = message.embeds[0].image.url
 
                     await message.channel.trigger_typing()
